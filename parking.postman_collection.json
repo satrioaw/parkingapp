@@ -1,0 +1,137 @@
+{
+	"info": {
+		"_postman_id": "26494010-95ac-4a1c-b16e-8afa0d6a6eee",
+		"name": "parking",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:3000/api/v1/parking/register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plat_nomor\":\"344557\",\r\n    \"warna\" :\"hitam\",\r\n    \"tipe\" : \"SUV\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/parking/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"parking",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/parking/checkout",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plat_nomor\":\"344556\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/parking/checkout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"parking",
+						"checkout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/parking/sumbytype",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"tipe\":\"suv\"\r\n}\r\n"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/parking/sumbytype",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"parking",
+						"sumbytype"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:3000/api/v1/parking/sumbycolour",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"warna\":\"hitam\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:3000/api/v1/parking/sumbycolour",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"api",
+						"v1",
+						"parking",
+						"sumbycolour"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
